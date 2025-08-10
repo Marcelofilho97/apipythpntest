@@ -1,5 +1,14 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 
+def galeryimg(request):
+  if request.method == 'GET':
+    galeryimg = {
+      'id': 1,
+      'image': 'assets/images/img01.jpeg',
+      'title': 'Imagem 01',
+      } # os dados que serão retornados em formato JSON
+    return JsonResponse(galeryimg, safe=False)
 # Create your views here.
 
 def index(request):
