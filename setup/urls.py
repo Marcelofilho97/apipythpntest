@@ -4,7 +4,7 @@ from galery.views import GalleryImageViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('', GalleryImageViewSet, basename='Gallery')
+router.register(r'gallery', GalleryImageViewSet, basename='Gallery')
 
 
 urlpatterns = [
