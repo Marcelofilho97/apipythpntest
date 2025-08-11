@@ -11,5 +11,3 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),  # Inclui as URLs do viewset no app galery
 ]
-
-
